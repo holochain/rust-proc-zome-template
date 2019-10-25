@@ -1,4 +1,4 @@
-#![feature(try_from, proc_macro_hygiene)]
+#![feature(proc_macro_hygiene)]
 #[macro_use]
 extern crate hdk;
 extern crate hdk_proc_macros;
@@ -42,8 +42,13 @@ pub struct MyEntry {
 #[zome]
 mod my_zome {
 
-    #[genesis]
-    fn genesis() {
+    #[init]
+    fn init() {
+        Ok(())
+    }
+
+    #[validate_agent]
+    pub fn validate_agent(validation_data: EntryValidationData<AgentId>) {
         Ok(())
     }
 
