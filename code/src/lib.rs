@@ -29,7 +29,7 @@ use hdk::holochain_persistence_api::{
 
 use hdk_proc_macros::zome;
 
-// see https://developer.holochain.org/api/{{ version }}/hdk/ for info on using the hdk library
+// see https://docs.rs/hdk/{{ version }}/hdk/ for info on using the hdk library
 
 // This is a sample zome that defines an entry type "MyEntry" that can be committed to the
 // agent's chain via the exposed function create_my_entry
