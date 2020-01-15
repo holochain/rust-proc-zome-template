@@ -53,7 +53,7 @@ mod my_zome {
     }
 
     #[entry_def]
-     fn my_entry_def() -> ValidatingEntryType {
+    fn my_entry_def() -> ValidatingEntryType {
         entry!(
             name: "my_entry",
             description: "this is a same entry defintion",
